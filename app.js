@@ -6,7 +6,7 @@ const { connect } = require('./routes/tasks');
 require('dotenv').config();
 
 // require('./db/connect');
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
